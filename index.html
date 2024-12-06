@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>Tesouro Escondido</title>
+</head>
+
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="arqueologo.jpeg.avif" alt="">
+            <p>Você é um arqueólogo destemido em busca de um artefato perdido. Sua jornada começa no Brasil, onde você deve decidir seu primeiro destino. Onde você irá primeiro?</p>
+            <button class="btn-proximo" data-proximo="1">Chapada Diamantina: Escolha esta opção se você quer explorar as incríveis formações rochosas e cavernas antigas.</button>
+            <button class="btn-proximo" data-proximo="2">Serra do Roncador: Escolha esta opção se você quer investigar as misteriosas montanhas e suas lendas antigas.</button>
+        </div>
+        <div class="passo" id="passo-1"> 
+            <img src="chapada-diamantina.avif" alt="">
+            <p>Você decidiu explorar a Chapada Diamantina.</p>
+            <button class="btn-proximo" data-proximo="3">Procurar cavernas: Você decide explorar as cavernas profundas e descobrir seus segredos.</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa: Você sente que as cavernas são muito perigosas e decide voltar para casa.</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <img src="serra-roncador.jpg" alt="">
+            <p>Você escolheu explorar a Serra do Roncador.</p>
+            <button class="btn-proximo" data-proximo="5">Investigar lendas: Você ouve as histórias locais e busca pistas sobre o artefato perdido.</button>
+            <button class="btn-proximo" data-proximo="6">Explorar montanhas: Você decide explorar as montanhas, onde acredita que o artefato pode estar escondido.</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Você encontrou cavernas incríveis na Chapada Diamantina. Dentro de uma delas, você descobre um mapa que sugere que o próximo destino é a Patagônia, onde mais segredos aguardam.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para a Patagônia</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <img src="voltando-p-casa.jpeg" alt="imagem voltando para casa e desistindo da aventura">
+            <p>Você desistiu e voltou para casa. Fim da jornada.</p>
+        </div>
+        <div class="passo" id="passo-5">
+            <p>Você descobriu algo sobre as lendas locais. As pistas sugerem que o próximo destino é a Patagônia.</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para a Patagônia.</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <p>Você decidiu explorar as montanhas da Serra do Roncador.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar e investigar lendas: Após explorar as montanhas, você decide voltar para investigar as lendas locais.</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <p>Você está na Patagônia, enfrentando os desafios do frio intenso.</p>
+            <button class="btn-proximo" data-proximo="9">Seguir as geleiras à esquerda: Você decide seguir pelas geleiras à esquerda, em busca do artefato.</button>
+            <button class="btn-proximo" data-proximo="10">Seguir as geleiras à direita: Você escolhe seguir pelas geleiras à direita, onde acredita que o artefato está enterrado.</button>
+        </div>
+        <div class="passo" id="passo-8">
+            <p>Você voltou para investigar as lendas locais.</p>
+            <button class="btn-proximo" data-proximo="7">Voltar para as lendas locais.</button>
+        </div>
+        <div class="passo" id="passo-9">
+            <p>Você escolheu seguir as geleiras à esquerda.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar uma caverna de gelo: Após uma longa caminhada pelas geleiras, você encontra uma caverna de gelo que pode conter o artefato.</button>
+        </div>
+        <div class="passo" id="passo-10">
+            <p>Você seguiu as geleiras à direita.</p>
+            <button class="btn-proximo" data-proximo="12">Retornar e tentar o outro caminho: Você decide que talvez o caminho pela esquerda fosse melhor.</button>
+        </div>
+        <div class="passo" id="passo-11">
+            <img src="artefato.jpg" alt="encontrando uma caverna na Patagônia">
+            <p>Você encontrou a caverna de gelo. Você explora a caverna e finalmente encontra o artefato perdido. Parabéns!</p>
+        </div>
+        <div class="passo" id="passo-12">
+            <p>Você decidiu retornar e tentar o outro caminho. Após uma longa jornada, você finalmente encontra a caverna de gelo e o artefato perdido!</p>
+            <button class="btn-proximo" data-proximo="11">Explorar a caverna de gelo</button>
+        </div>
+    </main>
+        <script src="script.js"></script> 
+    </body> 
+    </html>
+        
